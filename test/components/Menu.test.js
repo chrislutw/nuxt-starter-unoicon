@@ -7,7 +7,7 @@ describe('Tutorial', () => {
   });
   it('is a Vue instance', () => {
     const wrapper = mount(Tutorial);
-    const barByName = wrapper.findComponent({ name: 'Menu' }); // => 通过 `name` 找到 Bar
+    const barByName = wrapper.findComponent({ name: 'Menu' });
     expect(barByName.exists()).toBe(true);
   });
 });
